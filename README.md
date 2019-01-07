@@ -1,4 +1,4 @@
-Car Classifier
+# Car Classifier - Identify images of i10 or i20 cars
 
 This code has been created using fastai library. The fastai library simplifies training fast and accurate neural nets using modern best practices. Fastai library runs on top of Facebook's Pytorch framework
 
