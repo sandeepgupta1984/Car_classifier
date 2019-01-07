@@ -1,0 +1,14 @@
+version: '3'
+services:
+  api:
+    build: ./
+    ports:
+      - "7000:7000"
+    command: gunicorn -w 1 -b :7000 wsgi:app
+
+  nginx:
+    build: ./nginx
+    ports:
+      - "7001:7001"
+    depends_on:
+      - api
